@@ -80,7 +80,7 @@ def get_minimum(variable: list|tuple, *numbers: int|float):
     В качестве аргументов принимает список чисел и/или любые числа.
     '''
     # Проверим 1й аргумент на тип. Если = одно число, - создадим из него список
-    if type(variable) == (list or tuple):
+    if type(variable) == list or type(variable) == tuple:
         sequence = list(variable) + list(numbers) # Объединяем в общий список
     else: 
         num_ = [] # Создаем свой список, т.к. (*numbers) может не быть.
@@ -107,7 +107,7 @@ def get_minimum(variable: list|tuple, *numbers: int|float):
 
 fun_1 = get_minimum(L6) # Списки для проверок определены выше. Можно поменять номер у 'L' [1-6].
 fun_2 = get_minimum(5, 25 , -120 , 2.25 , 50.3 , -18.2 , 48) # Только числа
-fun_3 = get_minimum(L6, 5, 25 , -120 , 2.25 , 50.3 , -18.2 , 48) # внешний список и + числа
+fun_3 = get_minimum(L5, 5, 25 , -120 , 2.25 , 50.3 , -18.2 , 48) # внешний список и + числа
 fun_4 = get_minimum(6) # Одно число
 #fun_5 = get_minimum() # Выдаст ошибку, т.к. необходим хотя бы 1 аргумент.
 
