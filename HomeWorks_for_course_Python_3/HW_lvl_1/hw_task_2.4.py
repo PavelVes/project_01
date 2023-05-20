@@ -128,7 +128,7 @@ def _remove_word_with_one_em(text: str) -> str:
 
     new_text = '' # будущая возвращенная строка
     word_list = text.split(' ') # получаем текст в виде списка слов.
-    for num, word in enumerate(word_list): # проходим по каждому слову в тесте
+    for word in word_list: # проходим по каждому слову в тексте (списке)
         symbol_count = 0 # задаем счетчик для "!"
         for letter in range(len(word)): # Проходим по каждому символу слова
             if word[letter] == '!': symbol_count +=1 # Считаем "!"
