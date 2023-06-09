@@ -429,7 +429,7 @@ class BaseMatrix():
 
     # Добавим метод для поворота Матрицы (как для картинки)
 
-    def get_turn_matrix(self, change_direction=False): # ПОка не работает (правильно)
+    def get_turn_matrix(self, change_direction=False): # 
         '''Поворачивает матрицу по часовой стрелке (по умолчанию)
         
         change_direction = True - поворачивает против часовой стрелки
